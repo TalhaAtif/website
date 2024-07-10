@@ -38,14 +38,33 @@
     </nav>
     <section id="profile">
       <div class="section_pic-con">
-        <img src="./Images/Talha Gr12 Pic.jpg" alt="Talha Atif Profile Picture">
+        <img src="./Images/profile-pic.png" alt="Talha Atif Profile Picture">
       </div>
       <div class="section_text">
         <p class="section_text_p1">Hello, I'm</p>
         <h1 class="title">Talha Atif</h1>
         <p class="section_text_p2">Full Stack Developer</p>
         <div class="btn-con">
-          <button class="btn color-2" onclick="window.open('./Images')"></button>
+          <button 
+          class="btn color-2" 
+          onclick="window.open('./Images/resume.pdf')"
+          >View Resume</button>
+          <button 
+          class="btn color-1" 
+          onclick="location.href=('./#contact')"
+          >Contact Me</button>
+        </div>
+        <div id="socials-con">
+          <img 
+          src="./Images/linkedin.png" alt="LinkedIn Profile"
+          class="icon" 
+          onclick="window.open('https://www.linkedin.com/in/talhaatif2024/', '_blank')"
+          />
+          <img 
+          src="./Images/github.png" alt="GitHub Profile"
+          class="icon" 
+          onclick="window.open('https://github.com/TalhaAtif', '_blank')"
+          />
         </div>
       </div>
     </section>
