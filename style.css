@@ -6,7 +6,7 @@
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: rgb(50, 50, 54);
-  --bg-secondary: #141418;
+  --bg-secondary: #202026;
 }
 
 body {
@@ -34,8 +34,6 @@ main {
 }
 
 .navbar {
-  width: 5rem;
-  height: 100vh;
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 200ms ease;
@@ -56,7 +54,7 @@ main {
 }
 
 .icon-con {
-  width:5rem ;
+  width: 5rem;
 }
 
 .nav-item:last-child {
@@ -66,13 +64,15 @@ main {
 .nav-link {
   display: flex;
   align-items: center;
-  height: 5rem;
+  height: 4rem;
   color: var(--text-primary);
   text-decoration: none;
 }
 
 .link-text {
   display: none;
+  font-size: 16;
+  transition: 200ms ease;
 }
 
 .nav-link svg {
@@ -80,10 +80,82 @@ main {
   margin: 0 1.5rem;
 }
 
-.navbar:hover {
-  width: 12rem;
+.link-text:hover {
+  font-size: 20px;
+  transition: 200ms ease;
+  color: rgb(250, 250, 250);
 }
 
-.navbar:hover .link-text {
-  display: block;
+.link-text:hover:first-child {
+  font-size: 1.5rem;
+  transition: none;
+}
+
+.logo {
+  width: 100%;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+}
+
+.logo svg {
+  fill: white;
+  transform: rotate(0deg);
+  transition: transform 300ms;
+}
+
+.navbar:hover .logo svg {
+  transform: rotate(-180deg);
+}
+
+.logo-text {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 4rem;
+      }
+    
+      .logo {
+        display: none;
+      }
+    
+      .navbar-nav {
+        flex-direction: row;
+      }
+    
+      .nav-link {
+        justify-content: center;
+      }
+    
+      main {
+        margin: 0;
+      }
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .navbar:hover {
+    width: 13rem;
+  }
+
+  .navbar:hover .link-text {
+    display: block;
+  }
+  
 }
