@@ -78,18 +78,20 @@ main {
 .nav-link svg {
   width: 2rem;
   margin: 0 1.5rem;
+  fill: rgb(180,180,180);
 }
 
-.link-text:hover {
+.nav-link:hover .icon-con svg {
+  fill: rgb(77,91,206);
+}
+
+
+.nav-link:hover span{
   font-size: 20px;
   transition: 200ms ease;
   color: rgb(250, 250, 250);
 }
 
-.link-text:hover:first-child {
-  font-size: 1.5rem;
-  transition: none;
-}
 
 .logo {
   width: 100%;
@@ -158,4 +160,8 @@ main {
     display: block;
   }
   
+  .link-text:hover:first-child span{
+    font-size: 1.5rem;
+    transition: none;
+  } 
 }
