@@ -3,19 +3,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="styleNavbar.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <nav class="navbar">
       <ul class="navbar-nav">
-
         <li class="logo">
-          <a href="#" class="nav-link">
+          <a href="#landing" class="nav-link">
             <span class="link-text logo-text"> Talha</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-              <path 
+              <path
                 d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"
               />
             </svg>
@@ -78,6 +78,8 @@
           </a>
         </li>
 
+        <a href="index.html">Old Site</a>
+
         <li class="nav-item">
           <a href="#contact" class="nav-link">
             <div class="icon-con">
@@ -95,9 +97,16 @@
     </nav>
 
     <main>
-      <h1>Title</h1>
-      <a href="index.html">Click to enter site</a>
-      <p>Text Here</p>
+      <section id="landing">
+        <div class="landing-text">
+          <h1 class="title">Talha Atif</h1>
+          <p class="title-lower">>Software Developer</p>
+        </div>
+
+        <div class="profile-pic">
+          <img src="./Images/new_profile.png" alt="Profile Picture" />
+        </div>
+      </section>
     </main>
   </body>
 </html>
