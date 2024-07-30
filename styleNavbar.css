@@ -86,7 +86,10 @@ main {
   fill: rgb(77,91,206);
 }
 
+nav a.active svg{
+  fill: rgb(77,91,206)
 
+}
 .nav-link:hover span{
   font-size: 18px;
   transition: 200ms ease;
