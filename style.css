@@ -30,6 +30,10 @@ section {
   text-align: center;
 }
 
+#contact {
+  min-height: 94vh;
+}
+
 @media screen and (max-width: 1000px ) {
     #landing {
         display: block;
