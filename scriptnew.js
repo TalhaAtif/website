@@ -8,7 +8,7 @@ window.onscroll = () => {
     let height = sec.offsetHeight;
     let id = sec.getAttribute("id");
 
-    if (top >= offset && top < offset + height) {
+    if (top >= offset - height * 0.5 && top < offset + height * 0.5) {
       navLinks.forEach((links) => {
         links.classList.remove("active");
         document
