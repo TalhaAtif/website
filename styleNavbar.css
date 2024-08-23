@@ -30,7 +30,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 main {
-  margin-left: 5rem;
   padding: 1vh;
 }
 
@@ -134,8 +133,10 @@ nav a.active svg{
         bottom: 0;
         width: 100vw;
         height: 4rem;
+        position: fixed;
+        z-index: 1000;
       }
-    
+
       .logo {
         display: none;
       }
@@ -150,6 +151,7 @@ nav a.active svg{
     
       main {
         margin: 0;
+        margin-bottom: 4rem;
       }
 }
 
@@ -171,4 +173,9 @@ nav a.active svg{
     font-size: 1.5rem;
     transition: none;
   } 
+
+  main {
+    margin-left: 5rem;
+    padding: 1vh;
+  }
 }
