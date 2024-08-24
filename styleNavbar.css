@@ -135,6 +135,7 @@ nav a.active svg{
         height: 4rem;
         position: fixed;
         z-index: 1000;
+        overflow: hidden;
       }
 
       .logo {
@@ -159,10 +160,12 @@ nav a.active svg{
   .navbar {
     width: 5rem;
     height: 100vh;
+    z-index: 1000;
   }
 
   .navbar:hover {
     width: 13rem;
+    overflow: visible;
   }
 
   .navbar:hover .link-text {
