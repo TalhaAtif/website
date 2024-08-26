@@ -72,7 +72,6 @@ section {
 /*About Me*/
 
 #about {
-  display: flex;
   justify-content: center;
   flex-direction: column;
   position: relative;
@@ -105,6 +104,8 @@ section {
   align-items: center;
   padding-left: 8vw;
   padding-right: 8vw;
+  margin-top: 15vh;
+  
 }
 
 .about-text {
