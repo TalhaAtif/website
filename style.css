@@ -114,6 +114,34 @@ section {
   line-height: 135%;
 }
 
+/*Projects*/
+
+.project-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 5vh;
+}
+
+.card  {
+  width: 25vw;
+  border-radius: 10%;
+  background-color: blue;
+  overflow: hidden;
+  border-radius: .75rem;
+}
+
+.card-text {
+  padding: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 
 @media screen and (max-width: 1000px) {
   #landing {
