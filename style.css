@@ -105,7 +105,6 @@ section {
   padding-left: 8vw;
   padding-right: 8vw;
   margin-top: 15vh;
-  
 }
 
 .about-text {
@@ -116,6 +115,7 @@ section {
 
 /*Projects*/
 
+
 .project-cards-container {
   display: flex;
   justify-content: center;
@@ -124,16 +124,34 @@ section {
   margin-top: 5vh;
 }
 
-.card  {
-  width: 25vw;
-  border-radius: 10%;
-  background-color: blue;
+.card {
+  width: 325px;
+  background-color: rgb(1, 20, 37);
   overflow: hidden;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
+  transition: all 300ms ease;
+  border-color: rgb(28, 49, 69);
+  border-style: solid;
+  border-width: 2px;
+  display: flex;
+  flex-direction: column;
+  }
+
+.card:hover {
+  transform: translateY(-.75rem);
 }
 
 .card-text {
   padding: 1rem;
+  padding-top: .25rem;
+}
+
+.card-text h1 {
+  margin-top: .75rem;
+}
+
+.card-text:hover{
+  cursor: default;
 }
 
 .card img {
@@ -142,6 +160,43 @@ section {
   object-fit: cover;
 }
 
+.card-btn {
+  margin-top: .5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.project-btn {
+  color: white;
+  height: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: rgb(28,43,58);
+  border-radius: 1rem;
+  border: none;
+  font:inherit;
+  font-size: .75rem
+}
+
+.project-btn:hover{
+  cursor: pointer;
+  background-color: rgb(11, 49, 86);
+}
+
+.card-tags {
+  display: flex;
+  justify-content: center;
+}
+
+.tag {
+margin: .3rem;
+margin-bottom: 0;
+margin-top: .75rem;
+padding: 5px;
+border-style: solid;
+border-width: 2px;
+border-radius: 26px;
+}
 
 @media screen and (max-width: 1000px) {
   #landing {
@@ -162,7 +217,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
   }
 
   .about-me-section {
@@ -191,5 +245,13 @@ section {
   .about-me-title {
     position: relative;
     font-size: 3rem;
+  }
+
+  #projects {
+    display: block;
+  }
+
+  .card {
+    width: ;
   }
 }
