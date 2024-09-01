@@ -48,6 +48,7 @@ section {
   justify-content: center;
   display: flex;
   gap: 1.5rem;
+  display: flex;
 }
 
 .buttons button {
@@ -135,6 +136,7 @@ section {
   border-width: 2px;
   display: flex;
   flex-direction: column;
+  height: 520px;
   }
 
 .card:hover {
@@ -147,7 +149,7 @@ section {
 }
 
 .card-text h1 {
-  margin-top: .75rem;
+  margin-top: .5rem;
 }
 
 .card-text:hover{
@@ -175,7 +177,8 @@ section {
   border-radius: 1rem;
   border: none;
   font:inherit;
-  font-size: .75rem
+  font-size: .9rem;
+  font-weight: 500;
 }
 
 .project-btn:hover{
@@ -192,11 +195,30 @@ section {
 margin: .3rem;
 margin-bottom: 0;
 margin-top: .75rem;
-padding: 5px;
+padding: 4px;
 border-style: solid;
 border-width: 2px;
-border-radius: 26px;
+border-radius: 20px;
+font-size: .8rem;
 }
+
+.socials-con {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.buttons img {
+  -webkit-filter: invert();
+  filter: invert(90%);
+}
+
+.icon {
+  cursor: pointer;
+  height: 3rem;
+}
+
 
 @media screen and (max-width: 1000px) {
   #landing {
@@ -212,6 +234,8 @@ border-radius: 26px;
     text-align: center;
     margin: 2rem;
   }
+
+
 
   #about {
     display: flex;
@@ -251,7 +275,4 @@ border-radius: 26px;
     display: block;
   }
 
-  .card {
-    width: ;
-  }
 }
