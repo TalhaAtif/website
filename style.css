@@ -283,7 +283,7 @@ section {
   border-color: rgb(28, 49, 69);
   border-radius: 0.75rem;
   border-style: solid;
-  border-width: 2px;
+  border-width: 0.3rem;
   display: flex;
   flex-direction: row;
 }
@@ -304,9 +304,21 @@ section {
   width: 100%;
 }
 
+.info-school {
+display: flex;
+flex-direction: row;
+}
+
 .school-cards h1 {
   text-align: center;
   width: 100%;
+}
+
+.gpa {
+  border-color: rgb(28, 49, 69);
+  border-radius: 0.75rem;
+  border-style: solid;
+  border-width: 0.3rem;
 }
 
 @media screen and (max-width: 1000px) {
