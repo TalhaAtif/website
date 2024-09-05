@@ -305,8 +305,8 @@ section {
 }
 
 .info-school {
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .school-cards h1 {
