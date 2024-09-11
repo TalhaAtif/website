@@ -286,18 +286,16 @@ section {
   border-width: 0.3rem;
   display: flex;
   flex-direction: row;
+  height: 15rem;
 }
 
 .school-cards img {
   margin-left: 2rem;
 }
 
-.school-cards img:first-child {
+.school-cards img {
   width: 200px;
-}
-
-.school-cards img:last-child {
-  width: 200px;
+  height: 200px;
 }
 
 .school-info {
@@ -307,6 +305,7 @@ section {
 .info-school {
   display: flex;
   flex-direction: row;
+  margin-left: 2rem;
 }
 
 .school-cards h1 {
@@ -319,7 +318,15 @@ section {
   border-radius: 0.75rem;
   border-style: solid;
   border-width: 0.3rem;
+  width: 10em;
 }
+
+.classes-school {
+  width: 100%;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
 
 @media screen and (max-width: 1000px) {
   #landing {
