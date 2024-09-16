@@ -15,6 +15,13 @@ section {
 #landing {
   display: flex;
   justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.landing-content {
+  display: flex;
+  width: clamp(1000px, 70%, 100%);
 }
 
 .profile-pic {
@@ -22,13 +29,15 @@ section {
   display: flex;
   width: 400px;
   height: 400px;
-  margin-left: 10rem;
+  margin-right: auto;
 }
 
 .landing-text {
   align-self: center;
   text-align: left;
   margin: 0.25rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .landing-text h1 {
@@ -284,6 +293,7 @@ section {
   border-radius: 0.75rem;
   border-style: solid;
   border-width: 0.3rem;
+
   display: flex;
   flex-direction: row;
   height: 15rem;
@@ -291,9 +301,6 @@ section {
 
 .school-cards img {
   margin-left: 2rem;
-}
-
-.school-cards img {
   width: 200px;
   height: 200px;
 }
@@ -327,22 +334,7 @@ section {
   margin-left: 2rem;
 }
 
-
-@media screen and (max-width: 1000px) {
-  #landing {
-    display: block;
-  }
-
-  .profile-pic {
-    margin: 0;
-    margin: auto;
-  }
-
-  .landing-text {
-    text-align: center;
-    margin: 2rem;
-  }
-
+@media screen and (max-width: 1250px) {
   #about {
     display: flex;
     flex-direction: column;
@@ -360,8 +352,8 @@ section {
   }
   .about-pic {
     border-radius: 100%;
-    width: 50vw;
-    height: 50vw;
+    width: 100%;
+    height: 100%;
   }
 
   .about-me-pic {
@@ -370,11 +362,29 @@ section {
     margin-top: 2rem;
     width: 50vw;
     height: 50vw;
+    max-width: 500px;
+    max-height: 500px;
   }
 
   .about-me-title {
     position: relative;
     font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #landing {
+    display: block;
+  }
+
+  .profile-pic {
+    margin: 0;
+    margin: auto;
+  }
+
+  .landing-text {
+    text-align: center;
+    margin: 2rem;
   }
 
   #projects {
