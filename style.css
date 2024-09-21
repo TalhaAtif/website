@@ -7,12 +7,13 @@ html {
 section {
   padding-top: 4vh;
   padding-bottom: 4vh;
-  min-height: 92vh;
+  min-height: fit-content;
 }
 
 /* Landing Page */
 
 #landing {
+  height: 92vh;
   display: flex;
   justify-content: center;
   padding-left: 1rem;
@@ -58,6 +59,9 @@ section {
   display: flex;
   gap: 1.5rem;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .buttons button {
@@ -95,7 +99,6 @@ section {
   height: 3rem;
   top: 2rem;
 }
-
 
 .about-me-pic {
   align-self: center;
@@ -173,8 +176,12 @@ section {
   background-image: conic-gradient(
     from var(--angle),
     transparent 30%,
-    rgb(0, 187, 255),
-    red 80%
+    /*rgb(0, 187, 255),
+    red 80%*/
+    rgba(255, 74, 2, 0.945),
+    rgb(239, 243, 16)
+
+
   );
   padding: 5px;
   z-index: -1;
@@ -183,6 +190,11 @@ section {
   translate: -50% -50%;
   border-radius: 15px;
   animation: 1.6s spin linear infinite;
+}
+
+.card:hover::before {
+  filter: blur(0.5rem);
+  opacity: 0.5;
 }
 
 .card:hover::before {
@@ -346,10 +358,41 @@ section {
   flex-direction: column;
 }
 
+.school-name {
+  margin-bottom: 0px;
+}
 .classes-school {
   width: 100%;
   margin-right: 2rem;
   margin-left: 2rem;
+}
+
+#experience {
+  display: flex;
+  flex-direction: column;
+  min-height: 40vh;
+  padding: 2rem;
+}
+
+.job-card {
+  height: 350px;
+  width: 350px;
+  vertical-align: middle;
+}
+.job-card h1 {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+.job-card h2 {
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 0;
+}
+.job-card h3 {
+  text-align: center;
+  margin: 0;
+  font-size: 0.95rem;
 }
 
 @media screen and (max-width: 1250px) {
@@ -392,7 +435,8 @@ section {
 
 @media screen and (max-width: 1000px) {
   #landing {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .profile-pic {
@@ -410,6 +454,9 @@ section {
     margin: 2rem;
   }
 
+  .landing-content {
+    padding-top: 4rem;
+  }
   #projects {
     display: block;
   }
