@@ -484,6 +484,7 @@ section {
     position: relative;
     font-size: 3rem;
   }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -499,6 +500,7 @@ section {
   .landing-content {
     display: block;
     width: 100%;
+    padding: 0;
   }
 
   .profile-pic {
@@ -524,7 +526,7 @@ section {
     width: 8rem;
   }
   .landing-content {
-    padding-top: 4rem;
+    padding-top: 0rem;
   }
   #projects {
     display: block;
