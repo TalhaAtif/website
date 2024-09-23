@@ -407,6 +407,47 @@ section {
   font-size: 0.95rem;
 }
 
+#contact {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  justify-content: center;
+}
+
+.boxes {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-boxes a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.contact-boxes {
+  align-items: center;
+  justify-content: center;
+  width: 28rem;
+  height: 3rem;
+  border-width: 3px;
+  border-radius: 30rem;
+}
+
+.contact-boxes:hover {
+  background-color: rgb(17, 49, 117);
+  border-color: transparent;
+
+}
+
 @media screen and (max-width: 1250px) {
   #about {
     display: flex;
