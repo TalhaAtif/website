@@ -571,4 +571,13 @@ section {
   .info-school {
     margin: 0;
   }
+
+  .contact-boxes {
+    align-items: center;
+    justify-content: center;
+    width: 28rem;
+    height: 3rem;
+    border-width: 3px;
+    border-radius: 30rem;
+  }
 }
