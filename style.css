@@ -16,6 +16,7 @@ section {
   height: 92vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -31,6 +32,10 @@ section {
   width: 400px;
   height: 400px;
   margin-right: auto;
+}
+.profile-pic img {
+  height: 100%;
+  width: 100%;
 }
 
 .landing-text {
@@ -185,11 +190,8 @@ section {
     from var(--angle),
     transparent 30%,
     /*rgb(0, 187, 255),
-    red 80%*/
-    rgba(255, 74, 2, 0.945),
+    red 80%*/ rgba(255, 74, 2, 0.945),
     rgb(239, 243, 16)
-
-
   );
   padding: 5px;
   z-index: -1;
@@ -445,8 +447,7 @@ section {
 
 @media screen and (max-width: 1000px) {
   #landing {
-    display: flex;
-    flex-direction: column;
+    height: fit-content;
   }
 
   .profile-pic {
@@ -459,11 +460,28 @@ section {
     width: 100%;
   }
 
+  .profile-pic {
+    max-width: 100%;
+    height: auto;
+  }
   .landing-text {
     text-align: center;
     margin: 2rem;
   }
 
+  .resume-button {
+    flex: 1 1 100%;
+  }
+  .resume-button button {
+    width: 8rem;
+  }
+
+  .contact-page-button {
+    flex: 1 1 100%;
+  }
+  .contact-page-button button {
+    width: 8rem;
+  }
   .landing-content {
     padding-top: 4rem;
   }

@@ -128,32 +128,37 @@
             <p class="title-lower">>Software Developer</p>
 
             <div class="buttons">
-              <button
-                class="landing-buttons-text"
-                onclick="window.open('/Images/resume.pdf')"
-              >
-                View Resume
-              </button>
+              <div class="resume-button">
+                <button
+                  class="landing-buttons-text resume-button"
+                  onclick="window.open('/Images/resume.pdf')"
+                >
+                  View Resume
+                </button>
+              </div>
 
-              <button
-                class="landing-buttons-text"
-                onclick="location.href=('#contact')"
-              >
-                Contact Me
-              </button>
-
-              <img
-                src="./Images/linkedin.png"
-                alt="LinkedIn Profile"
-                class="icon"
-                onclick="window.open('https://www.linkedin.com/in/talhaatif2024/', '_blank')"
-              />
-              <img
-                src="./Images/github.png"
-                alt="GitHub Profile"
-                class="icon"
-                onclick="window.open('https://github.com/TalhaAtif', '_blank')"
-              />
+              <div class="contact-page-button">
+                <button
+                  class="landing-buttons-text"
+                  onclick="location.href=('#contact')"
+                >
+                  Contact Me
+                </button>
+              </div>
+              <div>
+                <img
+                  src="./Images/linkedin.png"
+                  alt="LinkedIn Profile"
+                  class="icon"
+                  onclick="window.open('https://www.linkedin.com/in/talhaatif2024/', '_blank')"
+                />
+                <img
+                  src="./Images/github.png"
+                  alt="GitHub Profile"
+                  class="icon"
+                  onclick="window.open('https://github.com/TalhaAtif', '_blank')"
+                />
+              </div>
             </div>
           </div>
 
@@ -391,7 +396,7 @@
             <div class="card-text">
               <h1 class="card-title">Cloud Time Converter</h1>
               <p class="card-info">
-                Using googleAPI, this program converted raw time data from
+                Using GoogleAPI, this program converted raw time data from
                 Spotify json files to accurate times and dates based on time
                 zone in google sheets.
               </p>
