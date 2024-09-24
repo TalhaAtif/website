@@ -440,6 +440,7 @@ section {
   height: 3rem;
   border-width: 3px;
   border-radius: 30rem;
+  cursor: pointer;
 }
 
 .contact-boxes:hover {
