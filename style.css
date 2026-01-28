@@ -157,12 +157,7 @@ section {
 .card {
   width: 325px;
   background-color: rgb(1, 20, 37);
-  /* overflow: hidden; */
   transition: all 300ms ease;
-  /* border-color: rgb(28, 49, 69);
-  border-radius: 0.75rem;
-  border-style: solid;
-  border-width: 2px; */
   display: flex;
   flex-direction: column;
   height: 520px;
@@ -170,56 +165,21 @@ section {
   border-radius: 10px;
 }
 
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
+.card::before {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border: 10px solid #011c32;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.card:hover::before {
+  border-color: #024a9b;
 }
 
 .card:hover {
-  background-color: rgb(1, 48, 89);
-}
-
-.card:hover::after,
-.card:hover::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: conic-gradient(
-    from var(--angle),
-    transparent 30%,
-    /*rgb(0, 187, 255),
-    red 80%*/ rgba(255, 74, 2, 0.945),
-    rgb(239, 243, 16)
-  );
-  padding: 5px;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  border-radius: 15px;
-  animation: 1.6s spin linear infinite;
-}
-
-.card:hover::before {
-  filter: blur(0.5rem);
-  opacity: 0.5;
-}
-
-.card:hover::before {
-  filter: blur(0.5rem);
-  opacity: 0.5;
-}
-
-@keyframes spin {
-  from {
-    --angle: 0deg;
-  }
-
-  to {
-    --angle: 360deg;
-  }
+  background-color: rgb(0, 41, 77);
 }
 
 .card-text {
@@ -292,6 +252,7 @@ section {
 .buttons img {
   -webkit-filter: invert();
   filter: invert(90%);
+  margin-left: 1rem;
 }
 
 .icon {
@@ -326,7 +287,8 @@ section {
 }
 
 .school-info {
-  width: 100%;
+  width: 80%;
+
 }
 
 .info-school {
@@ -345,7 +307,7 @@ section {
   border-radius: 0.75rem;
   border-style: solid;
   border-width: 0.3rem;
-  width: 7em;
+  width: 9em;
   height: 5rem;
   margin-top: auto;
   margin-bottom: auto;
